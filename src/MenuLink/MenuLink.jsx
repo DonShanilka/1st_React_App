@@ -1,4 +1,5 @@
-
+import React from 'react'
+import './MenuLink.css'
 
 function MenuLink() {
     return (
@@ -7,3 +8,5 @@ function MenuLink() {
         </>
     )
 }
+
+export default MenuLink
