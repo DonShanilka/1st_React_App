@@ -1,8 +1,11 @@
 import React from 'react'
 
-function BodyContent() {
+function BodyContent(props) {
   return (
-    <div>BodyContent</div>
+    <div className='content'>
+      <h3>Main Content</h3>
+      {props.children}
+    </div>
   )
 }
 
