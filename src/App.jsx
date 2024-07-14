@@ -10,7 +10,9 @@ function App() {
       <div id="wrapper">
         <HeaaderContent />
 
-        <BodyContent />
+        <BodyContent>
+          <h3>Home Page</h3>
+        </BodyContent>
 
       </div>
     </>
