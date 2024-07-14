@@ -10,7 +10,7 @@ function HeaaderContent() {
 
             <div>
                 <img src={LogoImage} alt="" />
-                <MenuLink linkname="Home" url="/home" />
+                <MenuLink linkname="Home" url="/" />
                 <MenuLink linkname="About" url="/about" />
                 <MenuLink linkname="Contact" url="/contact" />
                 <MenuLink linkname="Login" url="/login" />

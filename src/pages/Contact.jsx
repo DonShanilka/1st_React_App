@@ -3,7 +3,7 @@ import '../App.css'
 import BodyContent from '../Components/BodyContent/BodyContent'
 import HeaaderContent from '../Components/HeaderContent/HeaaderContent'
 
-function About() {
+function Contact() {
 
     return (
         <>
@@ -11,7 +11,7 @@ function About() {
                 <HeaaderContent />
 
                 <BodyContent>
-                    <h3>About Page</h3>
+                    <h3>Contact Page</h3>
                 </BodyContent>
 
             </div>
@@ -19,4 +19,4 @@ function About() {
     )
 }
 
-export default About
+export default Contact
