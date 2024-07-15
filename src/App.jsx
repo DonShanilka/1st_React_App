@@ -10,6 +10,7 @@ function App() {
   const [num1, serNum1] = useState(10)
   const [count, setCount] = useState(0)
   const [cliks, setCliks] = useState(0)
+  const [posts, setPosts] = useState([])
 
   function handleClik() {
     // num1 = 20;
@@ -40,6 +41,14 @@ function App() {
     document.title = `You Clicked ${cliks} times`
   }, [count])
 
+  useEffect(() => {
+    fetch("http://jsonplaceholder.typicode.com/users/1/posts")
+      .then((resp) => resp.json())
+      .then((blogPost) => setPosts(blogPost));
+
+    console.log("run")
+  }, []);
+
   return (
     <>
       <div id="wrapper">
@@ -54,6 +63,10 @@ function App() {
 
           <p>You clicked {cliks} Times</p>
           <button onClick={() => setCliks(cliks + 1)}>Click Me</button>
+
+          <ul className="prod_list" style={{ color: "white", "paddingLeft": "20ppx" }}>
+            {posts && posts.map((post) => <li key={post.id} style={{ listStyleType: "circle" }}>{post.title}</li>)}
+          </ul>
 
         </BodyContent>
 
