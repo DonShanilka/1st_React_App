@@ -6,7 +6,7 @@ import HeaaderContent from '../Components/HeaderContent/HeaaderContent'
 function About() {
 
     const loggedin = false;
-    const name = ["Shanilka", "Shashika"];
+    const name = ["Shanilka", "Nishith"];
     const nameCount = name.length;
 
     return (
@@ -19,7 +19,10 @@ function About() {
 
                     {loggedin && <h4>Logged In</h4>}
                     {!loggedin && <h4>Logged Out</h4>}
-                    {nameCount > 0 &&}
+                    {nameCount > 0 && name.map((name) => {
+                        return <h2>{name}</h2>
+                    })}
+                    {nameCount == 0 && <p>None Provided</p>}
                 </BodyContent>
 
             </div>
