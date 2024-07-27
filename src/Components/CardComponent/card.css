@@ -1,0 +1,7 @@
+.main-rect-card {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    background-color: aliceblue;
+    top: 10%;
+}
