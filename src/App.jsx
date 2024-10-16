@@ -25,6 +25,7 @@ function App() {
     <>
       <div id="wrapper">
         <Routes>
+          <Route path='/' element={<Login />} key={"login-page"} />
           <Route path='/login' element={<Login />} key={"login-page"} />
           <Route path='/register' element={<Register key={"register-page"} />} />
         </Routes>
