@@ -7,6 +7,7 @@ import * as React from 'react';
 import Button from '../Components/ButtonComponent/Button';
 import { useNavigate } from 'react-router-dom';
 import { Style } from '@mui/icons-material';
+import Input from '../Components/common/Input';
 
 function About() {
 
@@ -74,6 +75,10 @@ function About() {
                     <Button event={saveData} text="ACPT" bgColor={"#85e0e0"} buttonClick={buttonClick} />
 
                     <button onClick={() => { navigate("/contact") }} >contact page</button>
+                    <br /><br />
+
+                    <Input type="text" placeholder="name" bg={"#ffffff"} onChange={(val) => console.log(val.target.value)} /> <br />
+                    <Input type="number" placeholder="age" />
                 </BodyContent>
 
             </div>

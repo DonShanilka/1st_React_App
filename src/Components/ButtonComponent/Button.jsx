@@ -1,5 +1,5 @@
 
-function Button({ text, bgColor, buttonClick }) {
+function Button(props) {
 
     // function clickMe(text) {
     //     alert(text);
@@ -8,7 +8,7 @@ function Button({ text, bgColor, buttonClick }) {
 
     return (
         <div>
-            <button className="btn" style={{ backgroundColor: bgColor }} onClick={() => buttonClick(text)}>{text}</button>
+            <button className="btn" style={{ backgroundColor: props.bgColor }} onClick={() => props.buttonClick(props.text)}>{props.text}</button>
         </div>
     )
 }
