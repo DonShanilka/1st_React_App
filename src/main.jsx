@@ -6,11 +6,12 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Mui from './pages/Mui.jsx'
+import Axios from './pages/Axios.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Mui />,
+    element: <Axios />,
 
   },
   {

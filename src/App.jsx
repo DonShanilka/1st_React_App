@@ -13,6 +13,7 @@ import Button from './Components/ButtonComponent/Button.jsx';
 import Textinput from './Components/Textinput/Textinput.jsx';
 import Card from './Components/CardComponent/Card.jsx';
 import Mui from './pages/Mui.jsx';
+import Axios from './pages/Axios.jsx';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         {/* <HeaaderContent /> */}
 
         <BodyContent>
-          <Mui />
+          <Axios />
         </BodyContent>
 
       </div>
