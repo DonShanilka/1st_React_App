@@ -14,6 +14,9 @@ import Textinput from './Components/Textinput/Textinput.jsx';
 import Card from './Components/CardComponent/Card.jsx';
 import Mui from './pages/Mui.jsx';
 import Axios from './pages/Axios.jsx';
+import { Route, Routes } from 'react-router-dom';
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
 
 
 function App() {
@@ -21,12 +24,10 @@ function App() {
   return (
     <>
       <div id="wrapper">
-        {/* <HeaaderContent /> */}
-
-        <BodyContent>
-          <Axios />
-        </BodyContent>
-
+        <Routes>
+          <Route path='/login' element={<Login />} key={"login-page"} />
+          <Route path='/register' element={<Register key={"register-page"} />} />
+        </Routes>
       </div>
     </>
   )
