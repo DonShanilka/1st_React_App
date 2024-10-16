@@ -1,7 +1,14 @@
-function Button(props) {
+
+function Button({ text, bgColor, buttonClick }) {
+
+    // function clickMe(text) {
+    //     alert(text);
+    // }
+
+
     return (
         <div>
-            <button onClick={props.event}>{props.text}</button>
+            <button className="btn" style={{ backgroundColor: bgColor }} onClick={() => buttonClick(text)}>{text}</button>
         </div>
     )
 }

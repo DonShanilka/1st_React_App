@@ -9,7 +9,6 @@ function Contact() {
         <>
             <div id="wrapper">
                 <HeaaderContent />
-
                 <BodyContent>
                     <h3>Contact Page</h3>
                 </BodyContent>

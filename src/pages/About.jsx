@@ -5,9 +5,12 @@ import HeaaderContent from '../Components/HeaderContent/HeaaderContent'
 import TextField from '@mui/material/TextField';
 import * as React from 'react';
 import Button from '../Components/ButtonComponent/Button';
+import { useNavigate } from 'react-router-dom';
+import { Style } from '@mui/icons-material';
 
 function About() {
 
+    const navigate = useNavigate();
     const [name, setName] = React.useState("");
     const [age, setAge] = React.useState("");
     const [address, setAddress] = React.useState("");
@@ -41,6 +44,10 @@ function About() {
             .then((json) => console.log(json));
     };
 
+    function buttonClick(value) {
+        alert(value);
+    }
+
     return (
         <>
             <div id="wrapper">
@@ -64,8 +71,9 @@ function About() {
                     <input type="checkbox" id='myCheck' onChange={() => { setIsChecked(!isChecked) }} />
                     <p>{isChecked ? "Checkbox is checked" : "Checkbox is not checked"}</p>
                     <br /><br />
-                    <Button event={saveData} text="Save" />
+                    <Button event={saveData} text="ACPT" bgColor={"#85e0e0"} buttonClick={buttonClick} />
 
+                    <button onClick={() => { navigate("/contact") }} >contact page</button>
                 </BodyContent>
 
             </div>

@@ -66,11 +66,6 @@ function App() {
 
         <BodyContent>
 
-          {/* <Button text="Save" event={() => console.log("Save")} />
-          <Button text="Update" event={() => console.log("Update")} />
-          <Button text="Delete" event={() => console.log("Delete")} />;
-
-          <Textinput /> */}
 
           <Card h1="Card 1" p="sasdgfah asgadgau ashhgaudg assgaiydg" buttonText="Button 1" cimg="src\assets\react.svg" />;
 
