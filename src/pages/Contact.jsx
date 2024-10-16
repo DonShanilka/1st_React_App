@@ -1,14 +1,16 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../App.css'
 import BodyContent from '../Components/BodyContent/BodyContent'
 import HeaaderContent from '../Components/HeaderContent/HeaaderContent'
 
 function Contact() {
 
-    const [data, setData] = useState();
+    const [data, setData] = useState(0);
 
-    console.log(data);
+    useEffect(() => {
+        console.log(data)
+    }, [data])
 
     return (
         <>
@@ -16,7 +18,7 @@ function Contact() {
                 <HeaaderContent />
                 <BodyContent>
                     <h3>Contact Page</h3> <br /> <br />
-                    <button onClick={() => setData(100)}>Click</button> <br /> <br />
+                    <button onClick={() => setData(data + 1)}>Click</button> <br /> <br />
                     <button onClick={() => setData("Shanilka")}>Click 2</button>
                 </BodyContent>
 

@@ -12,64 +12,18 @@ import TextField from '@mui/material/TextField';
 import Button from './Components/ButtonComponent/Button.jsx';
 import Textinput from './Components/Textinput/Textinput.jsx';
 import Card from './Components/CardComponent/Card.jsx';
+import Mui from './pages/Mui.jsx';
 
 
 function App() {
-  // let num2 = 10;
-
-  // const [num1, serNum1] = useState(10)
-  // const [count, setCount] = useState(0)
-  // const [cliks, setCliks] = useState(0)
-  // const [posts, setPosts] = useState([])
-
-  // function handleClik() {
-  //   // num1 = 20;
-
-  //   serNum2(20)
-  //   // alert(serNum1)
-  // }
-
-  // const decrenent = () => {
-  //   setCount(count - 1)
-  // }
-
-  // const increment = () => {
-  //   setCount(count + 1)
-  // }
-
-  // // let myNumber = 10;
-  // // useEffect(() => {
-  // //   console.log("Hi")
-  // //   // if (myNumber == 5) {
-  // //   //   alert("equal to 50")
-  // //   // } else {
-  // //   //   alert("not equal to 50")
-  // //   // }
-  // // }, [count])
-
-  // useEffect(() => {
-  //   document.title = `You Clicked ${cliks} times`
-  // }, [count])
-
-  // useEffect(() => {
-  //   fetch("http://jsonplaceholder.typicode.com/users/1/posts")
-  //     .then((resp) => resp.json())
-  //     .then((blogPost) => setPosts(blogPost));
-
-  //   console.log("run")
-  // }, []);
 
   return (
     <>
       <div id="wrapper">
-        <HeaaderContent />
+        {/* <HeaaderContent /> */}
 
         <BodyContent>
-
-
-          <Card h1="Card 1" p="sasdgfah asgadgau ashhgaudg assgaiydg" buttonText="Button 1" cimg="src\assets\react.svg" />;
-
-
+          <Mui />
         </BodyContent>
 
       </div>
